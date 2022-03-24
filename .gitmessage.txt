@@ -1,0 +1,28 @@
+# <type>: <subject> {mandatory}
+#
+# <body> {optional}
+#
+# example
+# feat: implementation login api function
+#
+# finished login module and integration with server login api
+#
+# <Type>
+# Please abide by following types
+# feat: new feature
+# fix: bug fixed
+# docs: changed of documentation
+# style: changed of coding style
+# refactor: functional refactoring
+# perf: performance tuning
+# test: added test code
+# build: changed in build tools
+# ci: changed in configuration about ci
+# add: added functional not related files
+# 3rd: added 3rd party module
+#
+# <Subject>
+# briefly state the subject of this commit
+#
+# <Body>
+# describe the content of this commit in detail

@@ -1,0 +1,17 @@
+HELP.md
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/dist/
+
+### VS Code ###
+.vscode/
+
+### Customized Ignore ###
+logs/
+*.log
