@@ -23,6 +23,9 @@ let deleteProductRequest;
 
     // Register click event of deleteProductButton
     $('#deleteProductButton').on('click', deleteProduct);
+
+    // Register click event of redirectProductBomButton
+    $('#redirectProductBomButton').on('click', redirectProductBomPage);
 })()
 
 /**
@@ -123,7 +126,6 @@ function renderProductTableBody(products) {
             '<td class="productTableRowType">' + product.type + '</td>' +
             '<td class="productTableRowName">' + product.name + '</td>' +
             '<td class="productTableRowMinimumOrderQuantity">' + product.minimumOrderQuantity + '</td>' +
-            '<td class="productTableRowBomEntryCount">' + product.bomEntryCount + '</td>' +
             '</tr>');
     }
 }
@@ -237,4 +239,14 @@ function deleteProduct() {
     deleteProductRequest.always(function () {
         $inputs.prop("disabled", false);
     });
+}
+
+/**
+ * 
+ */
+function redirectProductBomPage() {
+    const productId = $("#editProductIdHiddenInput").html();
+    if (productId != null && productId.trim().length > 0) {
+        window.location.replace("bom.html?productId=" + productId);
+    }
 }

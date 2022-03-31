@@ -26,7 +26,7 @@
           <a class="nav-link active" href="#" role="button">物料/料件管理</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="bom.html">BOM 管理</a>
+          <a class="nav-link">BOM 管理</a>
         </li>
       </ul>
 
@@ -81,31 +81,29 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-danger" id="deleteProductButton">Delete</button>
             <button type="submit" class="btn btn-primary">Save</button>
           </div>
         </form>
       </div>
     </div>
   </div><!-- createProductModalLabel end -->
-
+  
   <!-- productTable -->
   <div class="table-responsive">
     <table class="table align-middle" id="productTable">
       <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">料號 (MATNR)</th>
-        <th scope="col">類別</th>
-        <th scope="col">品名 (MAKTX)</th>
-        <th scope="col">MOQ</th>
-        <th scope="col">使用量</th>
-      </tr>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">料號 (MATNR)</th>
+          <th scope="col">類別</th>
+          <th scope="col">品名 (MAKTX)</th>
+          <th scope="col">MOQ</th>
+        </tr>
       </thead>
       <tbody id="productTableBody"></tbody>
     </table>
   </div>
-
+  
   <div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -147,6 +145,8 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success" id="redirectProductBomButton">BOM</button>
+            <button type="button" class="btn btn-danger" id="deleteProductButton">Delete</button>
             <button type="submit" class="btn btn-primary">Save</button>
           </div>
         </form>
